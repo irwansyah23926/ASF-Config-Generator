@@ -1,6 +1,6 @@
 🎮 ASF Config Generator (Versi Aman - Pakai .env)
 
-Skrip Python ini membantu kamu membuat konfigurasi bot ArchiSteamFarm (ASF) secara otomatis, aman, dan hanya dari game Steam yang sudah terinstal dan masih memiliki kartu. Cocok untuk farming kartu dengan efisien tanpa membuka game secara nyata.
+Skrip Python ini membantu kamu membuat konfigurasi bot ArchiSteamFarm (ASF) secara otomatis, aman, dan hanya dari game Steam yang masih memiliki kartu. Tools ini juga bisa difilter agar hanya memproses game yang sudah diinstal. Cocok untuk farming kartu dengan efisien tanpa membuka game secara nyata.
 
 
 
@@ -12,7 +12,7 @@ Skrip Python ini membantu kamu membuat konfigurasi bot ArchiSteamFarm (ASF) seca
 
 🔒 API Key & Steam ID disimpan di .env
 
-🎯 Hanya farming dari game yang sudah diinstal dan punya kartu tersisa
+🎯 Memilih hanya game yang masih memiliki kartu (bisa difilter hanya dari game terinstal)
 
 ⚙️ File .json konfigurasi dibuat otomatis
 
@@ -92,7 +92,7 @@ asf-config-generator/
 
 ArchiSteamFarm (ASF) by JustArchi
 
-Script ini dibuat oleh: Irwansyah (luffy) 💡🔥
+Script ini dibuat oleh: Luffy x Kael 💡🔥
 
 📬 Butuh Bantuan?
 
