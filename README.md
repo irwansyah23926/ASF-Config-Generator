@@ -1,61 +1,102 @@
-# 🎮 ASF Config Generator (Versi Aman - .env Protected)
+🎮 ASF Config Generator (Versi Aman - Pakai .env)
 
-Skrip Python untuk membuat konfigurasi ArchiSteamFarm dengan aman, tanpa menyimpan password, dan API key kamu dilindungi.
+Skrip Python ini membantu kamu membuat konfigurasi bot ArchiSteamFarm (ASF) secara otomatis, aman, dan hanya dari game Steam yang sudah terinstal dan masih memiliki kartu. Cocok untuk farming kartu dengan efisien tanpa membuka game secara nyata.
 
----
 
-## ✅ Fitur
 
-- 🔐 Tidak menyimpan password
-- 🌱 API Key dan SteamID dibaca dari `.env` (tidak diupload)
-- ⚙️ JSON config dibuat otomatis
-- 📁 Output ke folder `config/`
 
----
 
-## 📦 Cara Pakai
+✅ Fitur Utama
 
-1. Buat file `.env` dari contoh:
-   ```bash
-   cp .env.example .env
-   ```
-   Lalu isi:
-   ```
-   STEAM_API_KEY=isi_api_key_anda
-   STEAM_ID=isi_steam_id64_anda
-   ```
+🔐 Tidak menyimpan password
 
-2. Jalankan skrip:
-   ```bash
-   python asf_config_generator.py
-   ```
+🔒 API Key & Steam ID disimpan di .env
 
-3. Masukkan username dan password Steam (password tidak disimpan)
+🎯 Hanya farming dari game yang sudah diinstal dan punya kartu tersisa
 
----
+⚙️ File .json konfigurasi dibuat otomatis
 
-## 📁 Struktur Folder
+🧼 Tidak uninstall game dan farming berjalan di background
 
-```
-asf-config-generator-safe/
-├── config/                  ← kosong, tempat output JSON
-├── .env.example             ← template .env (tidak sensitif)
+📦 Apa yang Dibutuhkan
+
+Python 3.10 atau lebih baru
+
+Download dari: https://www.python.org/downloads/
+
+Centang "Add Python to PATH" saat install
+
+Library Python: python-dotenv
+Jalankan ini di terminal:
+
+pip install python-dotenv
+
+Steam API Key dan SteamID64
+
+API Key: https://steamcommunity.com/dev/apikey
+
+Cek SteamID64 kamu: https://steamid.io/
+
+ArchiSteamFarm (ASF)
+
+Download dari: https://github.com/JustArchiNET/ArchiSteamFarm/releases
+
+Ekstrak ke folder terpisah seperti C:/ASF
+
+🚀 Cara Menjalankan
+
+Clone atau download repo ini
+
+git clone https://github.com/namamu/asf-config-generator.git
+cd asf-config-generator
+
+Buat file .env dari template .env.example
+
+STEAM_API_KEY=MASUKKAN_API_KEY_KAMU
+STEAM_ID=MASUKKAN_STEAM_ID64_KAMU
+
+Jalankan script:
+
+python SafeCardFarmer_Fixed.py
+
+Masukkan:
+
+Username Steam kamu
+
+Password Steam (hanya dipakai login pertama oleh ASF)
+
+File konfigurasi akan otomatis dibuat di folder config/
+
+Jalankan ASF seperti biasa dan farming otomatis dimulai 🎮
+
+🗂️ Struktur Folder
+
+asf-config-generator/
+├── config/                  ← kosong, akan diisi otomatis
+├── .env.example             ← template API key dan ID
 ├── .gitignore               ← mencegah file sensitif keupload
-├── asf_config_generator.py ← script utama
-└── README.md                ← panduan
-```
+├── SafeCardFarmer_Fixed.py ← script utama
+└── README.md                ← panduan ini
 
----
+⚠️ Yang Harus Dihindari
 
-## ⚠️ Jangan Lakukan Ini
+❌ Jangan upload file .env
 
-- ❌ Upload `.env` ke GitHub
-- ❌ Tulis API key atau SteamID langsung di script
-- ❌ Simpan password di file apa pun
+❌ Jangan tulis password/API langsung di script
 
----
+❌ Jangan upload config/*.json ke GitHub
 
-## 🤝 Credit
+❌ Jangan upload file .db dari ASF
 
-- ASF oleh JustArchi: https://github.com/JustArchiNET/ArchiSteamFarm
-- Script ini dibuat oleh Irwansyah untuk konfigurasi pribadi yang aman
+🤝 Credit
+
+ArchiSteamFarm (ASF) by JustArchi
+
+Script ini dibuat oleh: Irwansyah (luffy) 💡🔥
+
+📬 Butuh Bantuan?
+
+Buka tab "Issues" atau tinggalkan komentar di repo ini.
+
+Selamat farming kartu dengan aman dan efisien! 🚀
+
