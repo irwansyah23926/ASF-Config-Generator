@@ -87,7 +87,7 @@ asf-config-generator/
 
 ArchiSteamFarm (ASF) by JustArchi
 
-Script ini dibuat oleh: Luffy x Kael 💡🔥
+Script ini dibuat oleh: Irwansyah (luffy) 💡🔥
 
 📬 Butuh Bantuan?
 
