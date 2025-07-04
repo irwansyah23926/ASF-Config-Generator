@@ -6,6 +6,8 @@ Skrip Python ini membantu kamu membuat konfigurasi bot ArchiSteamFarm (ASF) seca
 
 
 
+
+
 ✅ Fitur Utama
 
 🔐 Tidak menyimpan password
@@ -43,14 +45,15 @@ Download dari: https://github.com/JustArchiNET/ArchiSteamFarm/releases
 
 Ekstrak ke folder terpisah seperti C:/ASF
 
-🚀 Cara Menjalankan
+🚀 Cara Cepat (Tinggal Download & Jalan)
 
-Clone atau download repo ini
+Klik tombol hijau Code > Download ZIP di atas repositori ini, atau klik tombol "⬇️ Download ZIP" di atas, lalu ekstrak file-nya.
 
-git clone https://github.com/namamu/asf-config-generator.git
-cd asf-config-generator
+Buka terminal di dalam folder hasil ekstrak, lalu install dependensi:
 
-Buat file .env dari template .env.example
+pip install python-dotenv
+
+Buat file .env dengan format seperti:
 
 STEAM_API_KEY=MASUKKAN_API_KEY_KAMU
 STEAM_ID=MASUKKAN_STEAM_ID64_KAMU
@@ -59,15 +62,7 @@ Jalankan script:
 
 python SafeCardFarmer_Fixed.py
 
-Masukkan:
-
-Username Steam kamu
-
-Password Steam (hanya dipakai login pertama oleh ASF)
-
-File konfigurasi akan otomatis dibuat di folder config/
-
-Jalankan ASF seperti biasa dan farming otomatis dimulai 🎮
+Ikuti instruksi di terminal, dan jalankan ASF untuk mulai farming otomatis!
 
 🗂️ Struktur Folder
 
